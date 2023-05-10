@@ -49,14 +49,14 @@ header h1 span {
 }
 
 nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   display: flex;
+  flex-flow: row wrap;
   justify-content: flex-end;
   align-items: center;
-  list-style: none;
-}
-
-nav ul li {
-  margin: 0 1rem;
+  gap: 2rem;
 }
 
 nav ul li a {
@@ -232,6 +232,45 @@ footer {
 .social-links li a span {
   font-size: 1.5rem;
 }
+.menu-toggle {
+  display: none; 
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; 
+  }
+  
+  nav ul {
+    display: none; 
+  }
+  
+  .menu-toggle:hover + ul,
+  nav ul:hover {
+    display: flex;
+    flex-direction: column;
+  }  
+}
+
+@media (max-width: 600px) {
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222564;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222564;
+  }
+}
 
 @media screen and (max-width: 768px) {
   header {
@@ -278,17 +317,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 576px) {
-  header h1 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header h1 span {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-  }
-}
 @media only screen and (max-width: 600px) {
   .footer-container {
     flex-direction: column;
