@@ -87,7 +87,6 @@ nav ul li a button {
 
 nav ul li a button:hover {
   background-color: var(--light-color);
-  color: var(--secondary-color);
 }
 
 .main {
@@ -97,7 +96,12 @@ nav ul li a button:hover {
 main {
   padding: 2rem 8rem;
 }
-
+.main header h1 span:hover {
+  color: var(--links-color);
+}
+.main header h1 p:hover {
+  color: var(--links-color);
+}
 #intro {
   background-color: var(--dark-color);
   color: var(--light-color);
@@ -156,7 +160,7 @@ main {
 }
 
 #contact button {
-  background-color: var(--secondary-color);
+  background-color: var(--dark-color);
   color: var(--light-color);
   border: none;
   padding: 0.5rem 1rem;
@@ -164,6 +168,9 @@ main {
   font-weight: bold;
   font-size: 1.2rem;
   cursor: pointer;
+}
+#contact button:hover {
+  background-color: var(--secondary-color);
 }
 
 footer {
