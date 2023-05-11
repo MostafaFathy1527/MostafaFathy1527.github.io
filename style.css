@@ -6,6 +6,7 @@
   --main-font: "Open Sans", sans-serif;
   --secondary-font: "Montserrat", sans-serif;
   --links-color: #b0b2fd;
+  --aqua: #86fbfb;
 }
 
 html {
@@ -208,6 +209,125 @@ main {
   font-size: 1.2rem;
   cursor: pointer;
 }
+article{
+  margin: 2rem;
+}
+.projects{
+  background-color: #5157D0;
+  color: var(--light-color);
+  padding: 4rem 1rem;
+}
+.projects h2{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.projects p{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.projects article{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+}
+.projects img{
+  grid-column: 1/6;
+  grid-row: 1/2;
+  border-left: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1rem;
+
+}
+img{
+  width: 100%;
+
+}
+.text{
+  grid-column: 5/11;
+  grid-row: 1/2;
+  text-align: right;
+  order : 1;
+}
+.text .tittle{
+  font-size: 2rem;
+  font-weight: bolder;
+  color : var(--aqua);
+
+}
+.text h4{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color : #01095e;
+}
+.text .disc-box{
+  background-color: var(--dark-color);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.text ul{
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.text ul li{
+  padding: 0.5rem 0;
+  display: flex;
+}
+.article-revrsed{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  margin-top:2rem ;
+}
+.article-revrsed img{
+  grid-column: 5/11;
+  grid-row: 1/2;
+  border-right: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  border-left: 0;
+  border-bottom: 0;
+  border-radius: 25px;
+  padding: 1rem;
+}
+.article-revrsed .text{
+  grid-column: 1/6;
+  grid-row: 1/2;
+  text-align: left;
+  order : 1;
+}
+.article-revrsed .text .tittle{
+  font-size: 2rem;
+  font-weight: bolder;
+  color : var(--aqua);
+
+}
+.article-revrsed .text h4{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color : #01095e;
+}
+.article-revrsed .text .disc-box{
+  background-color: var(--dark-color);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.article-revrsed .text ul{
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.article-revrsed .text ul li{
+  padding: 0.5rem 0;
+  display: flex;
+}
+
 
 footer {
   background-color: #f0ebff;
