@@ -177,7 +177,7 @@ main {
   background-image: linear-gradient(to right,#222564,#c0b7ff);
 }
 .left{
-  background-image: linear-gradient(to left,#c0b7ff,#222564);
+  background-image: linear-gradient(to right,#c0b7ff,#222564);
 }
 
 #contact {
@@ -441,6 +441,46 @@ footer {
   }
 
 }
+
+@media screen and (max-width: 768px) {
+  .projects {
+  padding: 2rem;
+  }
+  
+  .projects article {
+  grid-template-columns: 1fr;
+  }
+  
+  .text {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+  }
+  
+  .projects img {
+  grid-column: 1;
+  grid-row: 2;
+  border-left: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1rem;
+  }
+  
+  .article-revrsed .text {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+  }
+  
+  .article-revrsed img {
+  grid-column: 1;
+  grid-row: 2;
+  border-right: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1rem;
+  }
+  }
 @media only screen and (max-width: 600px) {
   .footer-container {
     flex-direction: column;
