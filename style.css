@@ -167,6 +167,17 @@ main {
   color: var(--secondary-color);
   text-decoration: none;
 }
+.line{
+  width: 100%;
+  height: 0.3rem;
+  margin: 0 0 0 0;
+}
+.right{
+  background-image: linear-gradient(to right,#222564,#c0b7ff);
+}
+.left{
+  background-image: linear-gradient(to left,#c0b7ff,#222564);
+}
 
 #contact {
   background-color: #e2deff;
