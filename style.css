@@ -464,6 +464,7 @@ footer {
   border-top: 1px solid var(--aqua);
   border-radius: 25px;
   padding: 1rem;
+  width: 100%;
   }
   
   .article-revrsed .text {
@@ -479,6 +480,12 @@ footer {
   border-top: 1px solid var(--aqua);
   border-radius: 25px;
   padding: 1rem;
+  width: 100%;
+  }
+  
+  .projects img,
+  .article-revrsed img{
+  width: 100%;
   }
   }
 @media only screen and (max-width: 600px) {
