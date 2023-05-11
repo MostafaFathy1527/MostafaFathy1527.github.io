@@ -441,7 +441,20 @@ footer {
   }
 
 }
-
+@media only screen and (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-left {
+    margin-bottom: 1rem;
+  }
+  
+  .social-links li {
+    margin: 0.5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .projects {
   padding: 2rem;
@@ -488,17 +501,3 @@ footer {
   width: 100%;
   }
   }
-@media only screen and (max-width: 600px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .footer-left {
-    margin-bottom: 1rem;
-  }
-  
-  .social-links li {
-    margin: 0.5rem;
-  }
-}
